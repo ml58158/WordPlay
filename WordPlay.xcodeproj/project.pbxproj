@@ -14,6 +14,9 @@
 		C486E22B1AAF781A007547CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C486E22A1AAF781A007547CB /* Images.xcassets */; };
 		C486E22E1AAF781A007547CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C486E22C1AAF781A007547CB /* LaunchScreen.xib */; };
 		C486E23A1AAF781A007547CB /* WordPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C486E2391AAF781A007547CB /* WordPlayTests.m */; };
+		C486E2451AAF79FC007547CB /* EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C486E2441AAF79FC007547CB /* EnterNameViewController.m */; };
+		C486E2481AAF7B41007547CB /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C486E2471AAF7B41007547CB /* EnterAdjectiveViewController.m */; };
+		C486E24B1AAF7C6C007547CB /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C486E24A1AAF7C6C007547CB /* ResultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		C486E2331AAF781A007547CB /* WordPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C486E2381AAF781A007547CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C486E2391AAF781A007547CB /* WordPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordPlayTests.m; sourceTree = "<group>"; };
+		C486E2431AAF79FC007547CB /* EnterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterNameViewController.h; sourceTree = "<group>"; };
+		C486E2441AAF79FC007547CB /* EnterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterNameViewController.m; sourceTree = "<group>"; };
+		C486E2461AAF7B41007547CB /* EnterAdjectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterAdjectiveViewController.h; sourceTree = "<group>"; };
+		C486E2471AAF7B41007547CB /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
+		C486E2491AAF7C6C007547CB /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		C486E24A1AAF7C6C007547CB /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,12 @@
 				C486E2241AAF781A007547CB /* ViewController.h */,
 				C486E2251AAF781A007547CB /* ViewController.m */,
 				C486E2271AAF781A007547CB /* Main.storyboard */,
+				C486E2431AAF79FC007547CB /* EnterNameViewController.h */,
+				C486E2441AAF79FC007547CB /* EnterNameViewController.m */,
+				C486E2461AAF7B41007547CB /* EnterAdjectiveViewController.h */,
+				C486E2471AAF7B41007547CB /* EnterAdjectiveViewController.m */,
+				C486E2491AAF7C6C007547CB /* ResultsViewController.h */,
+				C486E24A1AAF7C6C007547CB /* ResultsViewController.m */,
 				C486E22A1AAF781A007547CB /* Images.xcassets */,
 				C486E22C1AAF781A007547CB /* LaunchScreen.xib */,
 				C486E21D1AAF781A007547CB /* Supporting Files */,
@@ -168,6 +183,7 @@
 				TargetAttributes = {
 					C486E2191AAF781A007547CB = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = VNC2QQCDSB;
 					};
 					C486E2321AAF781A007547CB = {
 						CreatedOnToolsVersion = 6.2;
@@ -221,6 +237,9 @@
 			files = (
 				C486E2261AAF781A007547CB /* ViewController.m in Sources */,
 				C486E2231AAF781A007547CB /* AppDelegate.m in Sources */,
+				C486E2481AAF7B41007547CB /* EnterAdjectiveViewController.m in Sources */,
+				C486E24B1AAF7C6C007547CB /* ResultsViewController.m in Sources */,
+				C486E2451AAF79FC007547CB /* EnterNameViewController.m in Sources */,
 				C486E2201AAF781A007547CB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +362,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WordPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +374,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WordPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -19,19 +19,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+    //Hide back nav button
+    [self.navigationItem setHidesBackButton:YES];}
 
 
 
 
 //Segue to next view controller
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    ResultsViewController *resultsViewController = segue.destinationViewController;
-    resultsViewController.name = self.name;
-    resultsViewController.adjective = self.adjectiveTextField.text;
+    ResultsViewController *vc = segue.destinationViewController;
+    vc.name = self.name;
+    vc.adjective = self.adjectiveTextField.text;
 
 }
+
+
 
  //Checks to see if the name text field is blank.
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
@@ -39,6 +41,8 @@
         return NO; }
     else {
         return YES;
-        }
+    }
+
 }
+
 @end

@@ -11,4 +11,6 @@
 @interface ResultsViewController : UIViewController
 @property  NSString *name;
 @property  NSString *adjective;
+@property  NSString *adverb;
+@property  NSString *noun;
 @end

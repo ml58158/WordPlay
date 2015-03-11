@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //Hide back nav button
+    [self.navigationItem setHidesBackButton:YES];
 }
 
 // Checks to see if the name text field is blank.
